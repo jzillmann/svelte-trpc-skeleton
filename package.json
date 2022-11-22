@@ -1,0 +1,19 @@
+{
+  "name": "svelte-trpc-skeleton",
+  "version": "0.0.1",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build:frontend": "npm run build --prefix frontend",
+    "start:backend": "npm run start --prefix backend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start": "npm run build:frontend && npm run start:backend"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  }
+}
