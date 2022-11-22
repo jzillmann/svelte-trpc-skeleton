@@ -6,6 +6,8 @@ If you like video tutorials, https://www.youtube.com/watch?v=Lam0cYOEst8 walks y
 
 _Note: I'm not intending to update this a lot in the furture, but if you have meaningful contributions (like unifying the typescript setup or an env setup for real production) i happily accept pull requests!_
 
+A bit more thoughts on the setup at https://dev.to/o_a_e/fullstack-with-svelte-trpc-2cab.
+
 # Project Structure
 
 It's a very simple monorepo setup with NPM workspaces.
