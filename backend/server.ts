@@ -23,6 +23,9 @@ if (productionMode) {
   server.register(fastifyStatic, {
     root: path.join(__rootdir, "frontend/dist"),
   });
+  server.setNotFoundHandler((_, res) => {
+    res.sendFile("index.html");
+  });
 } else {
   server.register(require("@fastify/cors"), {
     origin: "http://127.0.0.1:5173",
